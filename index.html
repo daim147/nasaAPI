@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA API Pictures</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov"
+    />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader hidden">
+      <img src="./rocket.svg" alt="" />
+    </div>
+    <!-- Container -->
+    <div class="container">
+      <!-- NAvigation -->
+      <div class="navigation-container">
+        <span class="background"></span>
+        <!-- Result Nav -->
+        <span class="navigation-items" id="resultNav">
+          <h3 class="clickable" id="favorite">Favorites</h3>
+          <h3>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;&nbsp;</h3>
+          <h3 class="clickable" id="moreImage">Load More</h3>
+        </span>
+      </div>
+      <!-- Images Container -->
+      <div class="images-container"></div>
+    </div>
+    <!-- Save Confirmation -->
+    <div class="save-confirmed" hidden>
+      <h1>ADDED!</h1>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
